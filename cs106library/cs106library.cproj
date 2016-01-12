@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA4B670F-4B62-4542-9DE6-CDDA587E2C4A}</ProjectGuid>
+    <Compiler>
+      <Compiler ctype="GppCompiler" />
+    </Compiler>
+    <Language>CPP</Language>
+    <Target>Bin</Target>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <OutputName>cs106library</OutputName>
+    <CompileTarget>StaticLibrary</CompileTarget>
+    <DefineSymbols>DEBUG MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <OutputName>cs106library</OutputName>
+    <CompileTarget>StaticLibrary</CompileTarget>
+    <OptimizationLevel>3</OptimizationLevel>
+    <DefineSymbols>MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="StanfordCPPLib\base64.h" />
+    <None Include="StanfordCPPLib\basicgraph.h" />
+    <None Include="StanfordCPPLib\bitstream.h" />
+    <None Include="StanfordCPPLib\compare.h" />
+    <None Include="StanfordCPPLib\console.h" />
+    <None Include="StanfordCPPLib\dawglexicon.h" />
+    <None Include="StanfordCPPLib\deque.h" />
+    <None Include="StanfordCPPLib\direction.h" />
+    <None Include="StanfordCPPLib\error.h" />
+    <None Include="StanfordCPPLib\exceptions.h" />
+    <None Include="StanfordCPPLib\filelib.h" />
+    <None Include="StanfordCPPLib\foreach.h" />
+    <None Include="StanfordCPPLib\gbufferedimage.h" />
+    <None Include="StanfordCPPLib\gevents.h" />
+    <None Include="StanfordCPPLib\gfilechooser.h" />
+    <None Include="StanfordCPPLib\ginteractors.h" />
+    <None Include="StanfordCPPLib\gmath.h" />
+    <None Include="StanfordCPPLib\gobjects.h" />
+    <None Include="StanfordCPPLib\goptionpane.h" />
+    <None Include="StanfordCPPLib\graph.h" />
+    <None Include="StanfordCPPLib\grid.h" />
+    <None Include="StanfordCPPLib\gtimer.h" />
+    <None Include="StanfordCPPLib\gtypes.h" />
+    <None Include="StanfordCPPLib\gwindow.h" />
+    <None Include="StanfordCPPLib\hashcode.h" />
+    <None Include="StanfordCPPLib\hashmap.h" />
+    <None Include="StanfordCPPLib\hashset.h" />
+    <None Include="StanfordCPPLib\lexicon.h" />
+    <None Include="StanfordCPPLib\linkedlist.h" />
+    <None Include="StanfordCPPLib\map.h" />
+    <None Include="StanfordCPPLib\observable.h" />
+    <None Include="StanfordCPPLib\platform.h" />
+    <None Include="StanfordCPPLib\point.h" />
+    <None Include="StanfordCPPLib\pqueue.h" />
+    <None Include="StanfordCPPLib\queue.h" />
+    <None Include="StanfordCPPLib\random.h" />
+    <None Include="StanfordCPPLib\regexpr.h" />
+    <None Include="StanfordCPPLib\set.h" />
+    <None Include="StanfordCPPLib\shuffle.h" />
+    <None Include="StanfordCPPLib\simpio.h" />
+    <None Include="StanfordCPPLib\sound.h" />
+    <None Include="StanfordCPPLib\sparsegrid.h" />
+    <None Include="StanfordCPPLib\stack.h" />
+    <None Include="StanfordCPPLib\strlib.h" />
+    <None Include="StanfordCPPLib\timer.h" />
+    <None Include="StanfordCPPLib\tokenscanner.h" />
+    <None Include="StanfordCPPLib\urlstream.h" />
+    <None Include="StanfordCPPLib\vector.h" />
+    <None Include="StanfordCPPLib\private\foreachpatch.h" />
+    <None Include="StanfordCPPLib\private\main.h" />
+    <None Include="StanfordCPPLib\private\randompatch.h" />
+    <None Include="StanfordCPPLib\private\tokenpatch.h" />
+    <None Include="StanfordCPPLib\private\tplatform.h" />
+    <None Include="StanfordCPPLib\private\version.h" />
+    <None Include="StanfordCPPLib\stacktrace\call_stack.h" />
+    <None Include="StanfordCPPLib\stacktrace\stack_exception.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StanfordCPPLib\base64.cpp" />
+    <Compile Include="StanfordCPPLib\basicgraph.cpp" />
+    <Compile Include="StanfordCPPLib\bitstream.cpp" />
+    <Compile Include="StanfordCPPLib\console.cpp" />
+    <Compile Include="StanfordCPPLib\dawglexicon.cpp" />
+    <Compile Include="StanfordCPPLib\direction.cpp" />
+    <Compile Include="StanfordCPPLib\error.cpp" />
+    <Compile Include="StanfordCPPLib\exceptions.cpp" />
+    <Compile Include="StanfordCPPLib\filelib.cpp" />
+    <Compile Include="StanfordCPPLib\gbufferedimage.cpp" />
+    <Compile Include="StanfordCPPLib\gevents.cpp" />
+    <Compile Include="StanfordCPPLib\gfilechooser.cpp" />
+    <Compile Include="StanfordCPPLib\ginteractors.cpp" />
+    <Compile Include="StanfordCPPLib\gmath.cpp" />
+    <Compile Include="StanfordCPPLib\gobjects.cpp" />
+    <Compile Include="StanfordCPPLib\goptionpane.cpp" />
+    <Compile Include="StanfordCPPLib\gtimer.cpp" />
+    <Compile Include="StanfordCPPLib\gtypes.cpp" />
+    <Compile Include="StanfordCPPLib\gwindow.cpp" />
+    <Compile Include="StanfordCPPLib\hashcode.cpp" />
+    <Compile Include="StanfordCPPLib\lexicon.cpp" />
+    <Compile Include="StanfordCPPLib\main.cpp" />
+    <Compile Include="StanfordCPPLib\observable.cpp" />
+    <Compile Include="StanfordCPPLib\platform.cpp" />
+    <Compile Include="StanfordCPPLib\point.cpp" />
+    <Compile Include="StanfordCPPLib\random.cpp" />
+    <Compile Include="StanfordCPPLib\regexpr.cpp" />
+    <Compile Include="StanfordCPPLib\shuffle.cpp" />
+    <Compile Include="StanfordCPPLib\simpio.cpp" />
+    <Compile Include="StanfordCPPLib\sound.cpp" />
+    <Compile Include="StanfordCPPLib\startup.cpp" />
+    <Compile Include="StanfordCPPLib\strlib.cpp" />
+    <Compile Include="StanfordCPPLib\timer.cpp" />
+    <Compile Include="StanfordCPPLib\tokenscanner.cpp" />
+    <Compile Include="StanfordCPPLib\urlstream.cpp" />
+    <Compile Include="StanfordCPPLib\version.cpp" />
+    <Compile Include="StanfordCPPLib\stacktrace\call_stack_gcc.cpp" />
+    <Compile Include="StanfordCPPLib\stacktrace\call_stack_windows.cpp" />
+  </ItemGroup>
+</Project>
